@@ -28,7 +28,7 @@ def main():
 
 	try:
 		while True:
-			time.sleep(config.monitorInterval)
+			time.sleep(config.monitorInterval * 60)
 			printReport(streamBuffer)
 
 	except KeyboardInterrupt:
