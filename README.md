@@ -11,7 +11,18 @@ All the required packages are defined in requirements.txt
 
 3. Signup in twitter for dev account and create an app to obtain the auth token, auth secret , api token and api secret and define these in config.py file
 
+```
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
+```
+
 4. (Optional) Change the interval for report generating and analyzing window if required values are 1 min and 5 min by default
+```
+expiryMinutes = 5   #Controls interval to monitor ( Monitor last 5 minute stream )
+monitorInterval = 1 #Control duration for report generation (per minute)
+```
 
 5. Run the script using ```python main.py```. Enter the keyword to search when prompted 
 
