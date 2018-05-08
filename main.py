@@ -7,7 +7,7 @@ from reportHelper import printReport
 
 def nltkConfigure():
 	#Download nltk packages if not present already
-	print "Checking and downloading required nltk packages"
+	print "Checking and downloading required nltk packages "
 	punktDownload =	nltk.download('punkt', quiet=True)
 	taggerDownload =	nltk.download('averaged_perceptron_tagger', quiet=True)
 	return punktDownload and taggerDownload
