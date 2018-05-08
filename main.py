@@ -27,6 +27,7 @@ def main():
 	tweetStream = tweepy.Stream(auth = api.auth, listener = tweetStreamListener)
 	tweetStream.filter(track=[keyword], async=True)
 
+	print "Please Wait while generating report..."
 
 	try:
 		while True:
