@@ -26,7 +26,7 @@ expiryMinutes = 5   #Controls interval to monitor ( Monitor last 5 minute stream
 monitorInterval = 1 #Control duration for report generation (per minute)
 ```
 
-5. Run the script using ```python main.py```. Enter the keyword to search when prompted 
+5. Run the script using ```python main.py```. Enter the keyword to search when prompted. Please wait for 1 minute for the program to generate first report
 
 Program will analyze the tweets matching the keywords and generate the report on metioned intervals.
 
