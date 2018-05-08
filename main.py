@@ -7,8 +7,10 @@ from reportHelper import printReport
 
 def nltkConfigure():
 	#Download nltk packages if not present already
-	nltk.download('punkt', quiet=True)
-	nltk.download('averaged_perceptron_tagger', quiet=True)
+	print "Checking and downloading required nltk packages"
+	punktDownload =	nltk.download('punkt', quiet=True)
+	taggerDownload =	nltk.download('averaged_perceptron_tagger', quiet=True)
+	return punktDownload and taggerDownload
 
 
 def main():
@@ -36,5 +38,8 @@ def main():
 		tweetStream.disconnect()
 
 if __name__ == '__main__':
-	nltkConfigure()
-	main()
+	if nltkConfigure():
+		print "nltk packages downloaded"
+		main()
+	else:
+		print "Couldnt download required nltk packages"
