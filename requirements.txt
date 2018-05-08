@@ -1,0 +1,15 @@
+certifi==2018.4.16
+chardet==3.0.4
+idna==2.6
+nltk==3.3
+oauthlib==2.0.7
+PySocks==1.6.8
+python-dateutil==2.7.2
+pytz==2018.4
+requests==2.18.4
+requests-file==1.4.3
+requests-oauthlib==0.8.0
+six==1.11.0
+tldextract==2.2.0
+tweepy==3.6.0
+urllib3==1.22

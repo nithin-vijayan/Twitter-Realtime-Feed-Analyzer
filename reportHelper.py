@@ -32,8 +32,6 @@ def generateContentReport(activeTweets):
 
 def printReport(streamBuffer):
 	activeTweets = getActiveTweets(streamBuffer, config.expiryMinutes)
-	#Char sequence to clear screen
-	print(chr(27) + "[2J")
 	print """
 		User Report
 	"""
