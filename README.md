@@ -9,6 +9,8 @@ All the required packages are defined in requirements.txt
 
 2. run  ```pip install -r requirements.txt```  for installing all the required packages
 
+nltk packages for text parsing will be downloaded seperately during program execution. Program might take a while for first execution when downloading these packages
+
 3. Signup in twitter for dev account and create an app to obtain the auth token, auth secret , api token and api secret and define these in config.py file
 
 ```
