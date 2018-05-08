@@ -32,6 +32,7 @@ def generateContentReport(activeTweets):
 
 def printReport(streamBuffer):
 	activeTweets = getActiveTweets(streamBuffer, config.expiryMinutes)
+	
 	print """
 		User Report
 	"""
